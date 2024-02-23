@@ -34,7 +34,7 @@ class People(Base):
     gender: Mapped[str] = mapped_column(String(1000), nullable=True)
     hair_color: Mapped[str] = mapped_column(String(1000), nullable=True)
     height: Mapped[str] = mapped_column(String(1000), nullable=True)
-    homeworld: Mapped[str] = mapped_column(String(1000), nullable=True)
+    homeworld: Mapped[str] = mapped_column(ARRAY(String), nullable=True)
     mass: Mapped[str] = mapped_column(String(1000), nullable=True)
     name: Mapped[str] = mapped_column(String(1000), nullable=True)
     skin_color: Mapped[str] = mapped_column(String(1000), nullable=True)
